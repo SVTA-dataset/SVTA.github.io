@@ -1,0 +1,290 @@
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+}
+.content {
+  width: 1000px;
+  padding: 25px 50px;
+  margin: 25px auto;
+  background-color: white;
+  box-shadow: 0px 0px 10px #999;
+  border-radius: 15px;
+  font-family: "Google Sans";
+}
+.contentblock {
+  width: 950px;
+  margin: 0 auto;
+  padding: 0;
+  border-spacing: 25px 0;
+}
+.contentblock td {
+  background-color: #fff;
+  padding: 25px 50px;
+  vertical-align: top;
+  box-shadow: 0px 0px 10px #999;
+  border-radius: 15px;
+}
+a, a:visited {
+  color: #224b8d;
+  font-weight: 300;
+}
+#authors {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#conference {
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+#authors a {
+  margin: 0 10px;
+}
+p.author {
+  font-size: 16pt;
+  text-align: center;
+  margin: 0;
+  padding: 0 3em;
+  white-space: nowrap; /* 强制不换行 */
+  /* overflow-x: auto;    /* 如果内容过长自动加水平滚动条 */
+  -webkit-overflow-scrolling: touch; /* 移动端滑动更顺滑 */
+}
+
+.author-name {
+  display: inline-block;
+  margin: 0 16pt;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.author-name a {
+  text-decoration: underline;
+}
+
+/* 可选：移动端字体小一点 */
+@media (max-width: 768px) {
+  p.author {
+    font-size: 14pt;
+  }
+}
+
+table.affiliations {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	width: auto;
+	max-width: 1080px;
+}
+
+table.affiliations td {
+	padding-top: .5em;
+	/*width: 10%;*/
+	font-size: 11pt;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+code {
+  display: block;
+  padding: 10px;
+  margin: 10px 10px;
+}
+p {
+  line-height: 25px;
+  text-align: justify;
+}
+p code {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+#teasers {
+  margin: 0 auto;
+}
+#teasers td {
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+}
+#teasers img {
+  width: 250px;
+}
+#results img {
+  width: 133px;
+}
+#seeintodark {
+  margin: 0 auto;
+}
+#sift {
+  margin: 0 auto;
+}
+#sift img {
+  width: 250px;
+}
+.downloadpaper {
+  padding-left: 20px;
+  float: right;
+  text-align: center;
+}
+.downloadpaper a {
+  font-weight: bold;
+  text-align: center;
+}
+.teaser-img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.teaser-gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.summary-img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.charts-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* 确保顶部对齐 */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.chart-wrapper {
+  text-align: center; /* 让图片和文字都居中 */
+  width: 30%; /* 每个图表容器宽度，可根据需要调整 */
+  word-break: break-word; /* 允许长单词/文本换行 */
+  overflow-wrap: break-word; /* 确保过长文字自动换行 */
+}
+
+.chart-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chart-caption {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center; /* 确保文字在容器内居中 */
+}
+.video-iframe {
+  width: 1000;
+  height: 800;
+  margin: auto;
+  display: block;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.image {
+  flex-basis: 40%
+}
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.boxshadow {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 2px 2px 5px #888888;
+}
+.spacertr {
+  height: 8px;
+}
+.spacertd {
+  width: 40px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col {
+  float: left;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.col-gallery {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.indent-2chars {
+  padding-left: 1ch;
+  padding-right: 1ch;
+  font-size: 16px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* 隐藏 T2V 和 V2T 内部的边框 */
+    .no-border-right {
+      border-right: none;
+    }
+
+    .no-border-left {
+      border-left: none;
+    }
+
+    /* 主表头背景色（可选美化） */
+    .comparison-table thead tr:first-child th {
+      background-color: #f2f2f2;
+    }
+
+    /* 去掉第二行中 T2V 和 V2T 分组内部的竖线 */
+    .t2v-group th:not(:last-child),
+    .v2t-group th:not(:last-child) {
+      border-right: none;
+    }
+
+    .t2v-group th:last-child,
+    .v2t-group th:last-child {
+      border-left: none;
+    }
+
+    /* 鼠标悬停整行变色 */
+    .comparison-table tbody tr:hover {
+      background-color: #e6f7ff; /* 悬停颜色（可自定义） */
+      transition: background-color 0.3s ease;
+    }
